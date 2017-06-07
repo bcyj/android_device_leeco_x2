@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=x2
+export DEVICE=xp
 export VENDOR=leeco
 
 # Run the common extractor

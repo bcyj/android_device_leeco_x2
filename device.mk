@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product-if-exists, vendor/leeco/x2/x2-vendor.mk)
+$(call inherit-product-if-exists, vendor/leeco/xp/xp-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -36,7 +36,7 @@ TARGET_SCREEN_WIDTH := 1440
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/leeco/x2/rootdir/root,root)
+    $(call find-copy-subdir-files,*,device/leeco/xp/rootdir/root,root)
 
 # Audio configuration files
 PRODUCT_COPY_FILES += \
@@ -52,8 +52,8 @@ PRODUCT_COPY_FILES += \
 
 # Display xml
 PRODUCT_PACKAGES += \
-    qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml \
-    qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml \
+    qdcm_calib_data_le_xp_mdss_dsi_sharp_qhd_dualdsi_cmd.xml \
+    qdcm_calib_data_le_xp_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml \
     qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 
 # QMI

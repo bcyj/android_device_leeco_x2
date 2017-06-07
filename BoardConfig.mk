@@ -24,9 +24,9 @@
 # inherit from msm8996-common
 -include device/leeco/msm8996-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := le_x2,LeMax2_CN,LeMax2_NA
+TARGET_OTA_ASSERT_DEVICE := le_xp,LeMaxPro_CN,LeMaxPro_NA
 
-DEVICE_PATH := device/leeco/x2
+DEVICE_PATH := device/leeco/xp
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
@@ -35,7 +35,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 
-TARGET_KERNEL_CONFIG := lineage_x2_defconfig
+TARGET_KERNEL_CONFIG := lineage_xp_defconfig
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -51,4 +51,4 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
--include vendor/leeco/x2/BoardConfigVendor.mk
+-include vendor/leeco/xp/BoardConfigVendor.mk
