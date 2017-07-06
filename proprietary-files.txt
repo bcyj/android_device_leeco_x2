@@ -559,7 +559,7 @@ vendor/lib64/libyep_qmi_server.so
 
 # Assitive display calib
 etc/ad_calib.cfg
-etc/ad_calib_x2.cfg
+etc/ad_calib_xp.cfg
 
 # More configs
 etc/capability.xml

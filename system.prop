@@ -51,7 +51,7 @@ persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_bas
 persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
 # Apical AD
-ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
+ro.qcom.ad.calib.data=/system/etc/ad_calib_xp.cfg
 
 # GPS
 persist.loc.nlp_name=com.qualcomm.location
