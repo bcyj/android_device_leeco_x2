@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES += \
 # Display xml
 PRODUCT_PACKAGES += \
     qdcm_calib_data_le_xp_mdss_dsi_sharp_qhd_dualdsi_cmd.xml \
-    qdcm_calib_data_le_xp_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml \
     qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 
 # QMI

@@ -50,5 +50,13 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+RECOVERY_VARIANT := twrp
+TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := zh_CN
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/twrp.fstab
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/rootdir/recovery/mke2fs.conf:recovery/root/etc/mke2fs.conf
+
 # inherit from the proprietary version
 -include vendor/leeco/xp/BoardConfigVendor.mk
