@@ -31,7 +31,7 @@ DEVICE_PATH := device/leeco/xp
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom loglevel=2 user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=16M@0-0xffffffff
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 
@@ -57,6 +57,7 @@ RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/twrp.fstab
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/rootdir/recovery/mke2fs.conf:recovery/root/etc/mke2fs.conf
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 # inherit from the proprietary version
 -include vendor/leeco/xp/BoardConfigVendor.mk
